@@ -20,6 +20,11 @@ ET::$pluginInfo["GoogleAnalytics"] = array(
 
 class ETPlugin_GoogleAnalytics extends ETPlugin {
 
+	public function init()
+	{
+		ET::define("message.trackingIdHelp", "Get your Tracking ID by going into the <em>Administration</em> section for your Google Analytics Property and selecting <em>Property Settings</em>.");
+	}
+
 	/**
 	 * Add the Google Analytics tracking code to the <head> of every page.
 	 *
